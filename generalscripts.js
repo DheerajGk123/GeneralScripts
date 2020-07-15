@@ -3,6 +3,8 @@ const path = require('path')
 
 const app = express()
 
+const port = process.env.PORT || 3000
+
 const dirPath = path.join(__dirname)
 console.log(dirPath)
 // const indexPath = dirPath + "/GS Index file/index.html"
@@ -89,6 +91,6 @@ app.get('*' , function (req , res){
 
 console.log("started")
 
-app.listen(1027,function (){
-    console.log("server started at port 1027")
+app.listen(port ,function (){
+    console.log("server started at port :" + port)
 })

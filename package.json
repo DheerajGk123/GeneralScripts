@@ -1,0 +1,25 @@
+{
+  "name": "GeneralScripts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "generalscripts.js",
+  "dependencies": {
+    "express": "^4.17.1",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {},
+  "scripts": {
+     "start": "node generalscripts.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DheerajGk123/GeneralScripts.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DheerajGk123/GeneralScripts/issues"
+  },
+  "homepage": "https://github.com/DheerajGk123/GeneralScripts#readme"
+}
