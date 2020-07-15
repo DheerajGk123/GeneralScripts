@@ -1,0 +1,5 @@
+1) links location
+2) ads color
+3) index links
+3) home ,terms of use etc links
+4) next page link

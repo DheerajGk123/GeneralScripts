@@ -1,0 +1,251 @@
+  
+      /*  ---- Scroll bar  --- */
+       /* width */
+       ::-webkit-scrollbar {
+        width: 10px;
+            } 
+       /* Track */
+        ::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 -10px rgb(0, 0, 0); 
+        background-color: black;
+        border-radius: 0px;
+        }
+      /* Handle */
+      ::-webkit-scrollbar-thumb {
+         background: rgb(255, 255, 255); 
+         border-radius: 20px;
+            }
+
+           /* Handle on hover */
+      ::-webkit-scrollbar-thumb:hover {
+       background: rgba(255, 255, 255, 0.959); 
+         }
+
+      /* ----------------------- */
+
+       /* large devices ( laptops ) */
+       #logoNavBar{
+        width: 100%;
+        height: 90px;
+        background-color: rgb(0, 0, 0);
+       /* border-bottom: 1px solid rgba(0, 0, 0, 0.562); */
+       border: 1px solid rgb(0, 0, 0);
+        box-shadow: 0px 5px 20px -5px rgb(0, 0, 0) ;
+        -webkit-box-shadow: 0px -28px 18px 30px rgb(0, 0, 0) ;
+        -moz-box-shadow: 0px 5px 20px -5px rgb(0, 0, 0) ;
+        z-index: 1;
+        position: sticky;
+        top: 0px;
+          
+       }
+
+      #logo{
+        width:300px;
+        position: relative;
+        left: 20px;
+        top: 12px;
+        filter: invert(100%);
+      }
+
+
+      .indexIMG{
+        width: 100%;
+      }
+
+
+      .firstDiv{
+        width: 100%;
+        height: auto;
+        background-image: linear-gradient(rgb(255, 223, 0),rgb(241, 255, 47));
+        background-image: -moz-linear-gradient(rgb(246, 245, 0), rgb(255, 255, 80));
+        background-image: -webkit-linear-gradient(rgb(246, 245, 0), rgb(255, 255, 80));
+        text-align: center;
+        padding-top: 80px;
+        font-family: 'Roboto',sans-serif;
+      }
+
+
+
+      .firstDivText{
+        margin: 30px auto;
+        font-size: x-large;
+        font-weight: bolder;
+        margin-bottom: 100px;
+      }
+
+
+
+     .linkCards{
+       display: flex;
+       display: -webkit-flex;
+       width: 500px;
+       height: auto;
+       border: 0px blue solid;
+       margin: 20px auto;
+       
+     }
+
+      .card2{
+       background-color: rgb(0, 0, 0);
+       width: 200px;
+       height: 200px;
+       border: 0px yellow solid;
+       border-radius: 10px;
+       margin: 5px;
+     }
+
+      .card1{
+      background-color: rgb(0, 0, 0);
+      width: 200px;
+      height: 200px;
+      border: 0px yellow solid;
+      border-radius: 10px;
+      margin: 5px;
+    }
+
+     .card2{
+        margin-left: 90px;
+     }
+
+     .pla{
+      position: relative;
+      top: 50%;
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%);
+      color: rgb(247, 242, 27);
+      font-weight: bold;
+      letter-spacing: 2px;
+      font-size: large;
+     }
+
+      .card2:hover{
+        background-color: rgb(26, 26, 26);
+     }
+     .card1:hover{
+      background-color: rgb(26, 26, 26);
+   }
+   
+/* ------------  Footer  ------------- */
+ 
+.finalCont{
+  width: 100%;
+  height: auto;
+  border : 1px solid rgb(8, 8, 8);
+  background-color: rgb(22, 19, 19);
+  box-shadow: 0px -5px 20px 5px rgba(49, 49, 49, 0.644) ;
+  -webkit-box-shadow: 0px -5px 20px 5px rgba(0, 0, 0, 0.644) ;
+  -moz-box-shadow: 0px -5px 20px 5px rgba(49, 49, 49, 0.644) ;
+  margin-top: 50px;
+  }
+
+  .finalCont a{
+    text-decoration: none;
+    color: darkturquoise;
+  }
+
+  .finalCont a:hover{
+    color: rgb(109, 253, 255);
+  }
+
+  .finalCont li{
+    color: darkturquoise;
+  }
+
+  .bootRow1{
+     border: 0px white solid; 
+     margin-top: 30px;
+
+  }
+
+  .bootCol{
+    border: 0px rgb(238, 255, 0) solid; 
+    color: white; 
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+
+  .bootRow2{
+    border: 0px rgb(255, 255, 255) solid; 
+    margin: 10px 10px;
+  }
+/* ------------  Footer  ------------- */
+ 
+
+
+      /* Extra small devices (phones, 600px and down) */
+      @media only screen and (max-width: 450px) {
+      
+        #logoNavBar{
+        height: 70px;
+        background-color: rgb(0, 0, 0);    
+       }
+
+      #logo{
+        width:200px;
+        left: 10px;
+      }
+
+      .firstDivText{
+        width: 50%;
+        height: 50%;
+      }
+     
+      .linkCards{
+        width: 100%;
+        padding: 0 10px;
+      }
+
+      .card1{
+        width: 50%;
+      
+      }
+      .card2{
+        width: 50%;
+        
+      }
+      .pla{
+        font-size: medium;
+        letter-spacing: 1px;
+      }
+    
+
+    }
+
+
+     /* -----------------------------------------------------------------------*/
+
+    /* Small devices (portrait tablets and large phones, 600px and up) */
+    @media only screen and (min-width: 449px) and (max-width: 768px ) {
+
+      #logoNavBar{
+      
+       }
+
+      #logo{
+        left: 20px;
+      }
+
+      .firstDivText{
+        width: 50%;
+        height: 50%;
+      }
+     
+      .linkCards{
+        width: 100%;
+        padding: 0 10px;
+      }
+
+      .card1{
+        width: 50%;
+      
+      }
+      .card2{
+        width: 50%;
+        
+      }
+      .pla{
+        font-size: medium;
+        letter-spacing: 1px;
+      }
+    }
+  /* ------------------------------------------------------------- */

@@ -1,0 +1,767 @@
+  
+      /*  ---- Scroll bar  --- */
+       /* width */
+       ::-webkit-scrollbar {
+        width: 10px;
+            } 
+       /* Track */
+        ::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 -10px rgb(0, 0, 0); 
+        background-color: black;
+        border-radius: 0px;
+        }
+      /* Handle */
+      ::-webkit-scrollbar-thumb {
+         background: rgb(255, 255, 255); 
+         border-radius: 20px;
+            }
+
+           /* Handle on hover */
+      ::-webkit-scrollbar-thumb:hover {
+       background: rgba(255, 255, 255, 0.959); 
+         }
+
+      /* ----------------------- */
+
+       /* large devices ( laptops ) */
+       #logoNavBar{
+        width: 100%;
+        height: 90px;
+        background-color: rgb(0, 0, 0);
+       /* border-bottom: 1px solid rgba(0, 0, 0, 0.562); */
+       border: 1px solid rgb(0, 0, 0);
+        box-shadow: 0px 5px 20px -5px rgb(0, 0, 0) ;
+        -webkit-box-shadow: 0px -28px 18px 30px rgb(0, 0, 0) ;
+        -moz-box-shadow: 0px 5px 20px -5px rgb(0, 0, 0) ;
+        z-index: 1;
+        position: sticky;
+        top: 0px;
+          
+       }
+
+      #logo{
+        width:300px;
+        position: relative;
+        left: 20px;
+        top: 12px;
+        filter: invert(100%);
+      }
+
+
+   /* ------------  Footer  ------------- */
+ 
+      .finalCont{
+        width: 100%;
+        height: auto;
+        border : 1px solid rgb(8, 8, 8);
+        background-color: rgb(22, 19, 19);
+        box-shadow: 0px -5px 20px 5px rgba(49, 49, 49, 0.644) ;
+        -webkit-box-shadow: 0px -5px 20px 5px rgba(0, 0, 0, 0.644) ;
+        -moz-box-shadow: 0px -5px 20px 5px rgba(49, 49, 49, 0.644) ;
+        }
+
+        .finalCont a{
+          text-decoration: none;
+          color: darkturquoise;
+        }
+
+        .finalCont a:hover{
+          color: rgb(109, 253, 255);
+        }
+
+        .finalCont li{
+          color: darkturquoise;
+        }
+
+        .bootRow1{
+           border: 0px white solid; 
+           margin-top: 30px;
+
+        }
+
+        .bootCol{
+          border: 0px rgb(238, 255, 0) solid; 
+          color: white; 
+          margin-top: auto;
+          margin-bottom: auto;
+        }
+
+        .bootRow2{
+          border: 0px rgb(255, 255, 255) solid; 
+          margin: 10px 10px;
+        }
+   /* ------------  Footer  ------------- */
+
+
+      #lognav-below-space{
+       height: 30px;
+
+      }
+
+
+  
+     
+/*/-/-/-/-/--//-/-/-/-/-/-/----MAIN ADS-----/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-*/
+
+ /* ------------  ads 1 --------------*/
+  
+      /*   ad-largeSkyscraper   300 x 600 */
+      #ad-largeSkyscraper1{
+        width: 310px;
+        height: 610px;
+        /* background-color: yellow; */
+        float: left;
+        margin-left: 10px;
+      }
+      
+      #ad-largeSkyscraper2{
+        width: 310px;
+        height: 610px;
+        /* background-color: yellow; */
+        clear: right;
+        float: right;
+        margin-top: 20px;
+        margin-right: 10px;
+      } 
+
+      #ad-largeSkyscraper3{
+        width: 310px;
+        height: 610px;
+        /* background-color: yellow; */
+        clear: left;
+        float: left;
+        margin-top: 20px;
+        margin-left: 10px;
+      } 
+
+      #ad-largeSkyscraper4{
+        width: 310px;
+        height: 610px;
+        /* background-color: yellow; */
+        clear: right;
+        float: right;
+        margin-top: 20px;
+        margin-right: 10px;
+      } 
+
+      #ad-largeSkyscraper5{
+        width: 310px;
+        height: 610px;
+        /* background-color: yellow; */
+        clear: left;
+        float: left;
+        margin-top: 20px;
+        margin-left: 10px;
+
+      } 
+
+     
+      /*   ad-leaderboard   728 x 90 */
+      #ad-leaderboard1{
+        width: 740px;
+        height: 100px;
+        /* background-color: rgb(255, 0, 0); */
+        margin: 0 auto;    
+      }
+
+  
+      /*   ad-medRectangle1   300 x 250 */
+       #ad-medRectangle1{
+        width: 310px;
+        height: 260px;
+        /* background-color: rgb(76, 0, 255); */
+        float: right;
+        margin-right: 5px;
+
+      } 
+
+      /*   ad-medRectangle2   300 x 250 */
+      #ad-medRectangle2{
+        width: 310px;
+        height: 260px;
+        /* background-color: rgb(76, 0, 255); */
+        clear: left;
+        float: left;
+        margin-top: 20px;
+        margin-left: 10px;
+
+      } 
+
+
+     /*   ad-halfPage1   160 x 600 */
+     #ad-halfPage1{
+      width: 165px;
+      height: 610px;
+      /* background-color: rgb(255, 0, 191); */
+      margin-top: 20px;
+      margin-right: 5px;
+      clear: right;
+      float: right;
+    }
+    
+   /*   ad-halfPage2   160 x 600 */
+   #ad-halfPage2{
+    width: 165px;
+    height: 610px;
+    /* background-color: rgb(255, 0, 119); */
+    margin-top: 20px;
+    margin-right: 5px;
+    float: right;
+  }
+  
+  #ad-halfPage3{
+      width: 165px;
+      height: 610px;
+      /* background-color: rgb(255, 0, 191); */
+      margin-top: 20px;
+      margin-left: 5px;
+      clear: left;
+      float: left;
+    }
+
+      /*   ad-halfPage2   160 x 600 */
+      #ad-halfPage4{
+        width: 165px;
+        height: 610px;
+        /* background-color: rgb(255, 0, 119); */
+        margin-top: 20px;
+        margin-left: 5px;
+        float: left;
+      }
+  
+      #ad-halfPage5{
+          width: 165px;
+          height: 610px;
+          /* background-color: rgb(255, 0, 119); */
+          margin-top: 20px;
+          margin-right: 100px;
+          clear: right;
+          float: right;
+        }
+
+   /* ------------  ads 2 --------------*/
+
+   .ad-ParentBody{
+    margin: 0 auto;
+    /* background-color: rgb(207, 220, 20); */
+    width: 760px;
+    height: auto;
+
+ }
+  .ad-Body{
+     margin: 0 auto;
+     display: flex;
+     -webkit-display: flex;
+     width: 720px;
+     height: 310px;
+     /* background-color: cadetblue; */
+  }
+   /*   ad-largeRectangle1   300 x 250 */
+  .ad-LargeRect1{
+      width: 340px;
+      height: 290px;
+      /* background-color: chartreuse; */
+      margin: 10px;
+  }
+
+
+
+    
+/* ------------  ads 3 --------------*/
+
+     .ad-ParentBodySmall{
+        margin: 0 auto;
+        /* background-color: rgb(220, 207, 20); */
+        width: 750px;
+        height: auto;
+ 
+     }
+      .ad-BodySmall{
+         margin: 0 auto;
+         display: flex;
+         -webkit-display: flex;
+         width: 720px;
+         height: 310px;
+         /* background-color: rgba(95, 158, 160, 0.856); */
+      }
+ 
+    /*   ad-medRectangle3   300 x 250 */
+      .ad-MediumRect3{
+          width: 310px;
+          height: 260px;
+          /* background-color: rgba(128, 255, 0, 0.829); */
+          margin: 10px;
+          margin: 20px auto;
+      }
+
+      /*   ad-leaderboard2   728 x 90 */
+     .ad-leaderBoard2{
+         margin: 0 auto;
+         width: 740px;
+         height: 100px;
+         /* background-color: rgb(210, 30, 30); */
+     }
+
+    /*   ad-leaderboard3   728 x 90 */
+     .ad-leaderBoard3{
+        margin: 0 auto;
+        width: 740px;
+        height: 100px;
+        /* background-color: rgb(255, 6, 6); */
+    }
+
+ /* ------------  ads  end --------------*/
+
+  /* ------------  ads 4 --------------*/
+
+      /*   ad-last   160 x 600 */
+      .ad-last{
+        margin: 0 auto;
+        /* background-color: rgb(217, 220, 20); */
+        width: 750px;
+        height: auto;
+ 
+     }
+      .ad-subLast1{
+         margin: 0 auto;
+         display: flex;
+         -webkit-display: flex;
+         width: 720px;
+         height: 310px;
+         /* background-color: rgba(95, 158, 160, 0.856); */
+      }
+
+    /*   ad-largeRectangle4   300 x 250 */
+          .ad-LargeRect4{
+            width: 340px;
+            height: 290px;
+            /* background-color: rgba(128, 255, 0, 0.829); */
+            margin: 0 auto;
+            margin-top: 10px;
+        }
+ 
+    /*   ad-medRectangle3   300 x 250 */
+      .ad-MediumRect4{
+          width: 310px;
+          height: 260px;
+          /* background-color: rgba(128, 255, 0, 0.829); */
+          margin: 10px;
+          margin: 20px auto;
+      }
+
+      /*   ad-leaderboard4   728 x 90 */
+     .ad-leaderBoard4{
+         margin: 0 auto;
+         width: 740px;
+         height: 100px;
+         /* background-color: rgb(255, 4, 4); */
+     }
+
+     /* -----------------------------------------------------------------------*/
+
+
+ /*/-/-/-/-/--//-/-/-/-/-/-/----MAIN ADS  END-----/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-*/
+
+
+ .pageContent{
+  width: 805px;
+  height: auto;  /* if > 2500px , then "height: auto;" */
+  margin: 20px auto;
+  font-family:'Open Sans', sans-serif;
+  border-left: 2px rgb(204, 204, 204) solid;
+  border-right: 2px rgb(204, 204, 204) solid;
+  padding: 20px;
+
+}
+
+
+    .Title{
+      background-color: rgb(41, 41, 41);
+      border: 1px black solid;
+      border-radius: 10px;
+      padding: 20px 10px;
+      color: white;
+      font-weight: bolder;
+      text-align: center;
+      letter-spacing: 4px;
+      word-spacing: 3px;
+    }
+
+
+    #index{
+      background-color: rgb(245, 245, 245);
+      border: 1px  rgb(245, 245, 245) solid ;
+      border-left: 5px black solid;
+      border-radius: 1%;
+      line-height: 200%;
+    }
+
+    .head4{
+      font-weight: bold;
+      text-align: center;
+    }
+
+    .points{
+      line-height: 200%;
+      word-spacing: 2px;
+    }
+
+    #DU{
+        text-align: center;
+    } 
+
+    #DUbutton{
+       width: 300px;
+       height: 60px;
+       font-size: x-large;
+       border: 0px white solid;
+       border-radius: 50px;
+       background-color: rgb(89, 142, 255);
+       color: white;
+       outline: none;
+    }
+
+    #DUbutton:hover {
+      background-color: rgb(4, 112, 175);
+      
+    }
+
+    .note{
+      font-weight: bold;
+      border: 1px rgb(255, 201, 100) solid;
+      border-left: 6px rgb(255, 167, 3) solid;
+      padding: 10px 10px;
+      padding-bottom: 1px;
+      background-color: rgb(248, 248, 248);
+    }
+  
+    #NextLink{
+      background-color: chartreuse;
+      width: 90%;
+      height: 50px;
+      font-size: larger;
+      font-weight: bold;
+      border: 0px white solid;
+      border-radius: 10px;
+      outline: none;
+    }  
+
+    #NextLink:hover{
+      background-color: rgb(113, 226, 0);
+      border: 0px white solid;
+    }
+  
+
+
+
+
+     /* -----------------------------------------------------------------------*/
+
+
+      /* Extra small devices (phones, 600px and down) */
+      @media only screen and (max-width: 450px) {
+      
+        #logoNavBar{
+        height: 70px;
+        background-color: rgb(0, 0, 0);    
+       }
+
+      #logo{
+        width:200px;
+        left: 10px;
+      }
+
+      #lognav-below-space{
+        height: 15px;
+ 
+       }
+
+      .pageContent{
+        width: 100%;
+        height: auto;
+        margin: 20px auto;
+        font-family:'Open Sans', sans-serif;
+        border-left: 0px rgb(204, 204, 204) solid;
+        border-right: 0px rgb(204, 204, 204) solid;
+        padding: 10px;
+
+      }
+
+    #DUbutton{
+      width: 80%;
+      font-size: large;
+    }
+
+   /*/-/-/-/-/--//-/-/-/-/-/-/----MAIN ADS-----/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-*/
+
+   #ad-largeSkyscraper1{
+    display: none;
+  } 
+
+  #ad-largeSkyscraper2{
+    display: none;
+  } 
+
+ #ad-largeSkyscraper3{
+   display: none;
+}
+
+#ad-largeSkyscraper4{
+    display: none;
+  } 
+
+  #ad-largeSkyscraper5{
+    display: none;
+  } 
+
+
+  /*   ad-leaderboard   728 x 90 */
+  #ad-leaderboard1{
+    display: none;
+
+  }
+
+
+  /*   ad-medRectangle1   300 x 250 */
+   #ad-medRectangle1{
+    display: none;
+
+
+  } 
+
+  /*   ad-medRectangle2   300 x 250 */
+  #ad-medRectangle2{
+   display: none;
+
+  } 
+
+
+ /*   ad-halfPage1   160 x 600 */
+  #ad-halfPage1{
+    display: none;
+
+  }
+  
+ /*   ad-halfPage2   160 x 600 */
+ #ad-halfPage2{
+  display: none;
+
+}
+
+#ad-halfPage3{
+    display: none;
+
+  }
+
+  #ad-halfPage4{
+    display: none;
+
+  }
+
+  #ad-halfPage5{
+    display: none;
+
+  }
+
+.ad-last{
+    display: none;
+
+}
+
+.ad-ParentBody{
+    display: none;
+}
+
+.ad-ParentBodySmall{
+    display: none;
+}
+
+.ad-mobile-ParentBody{
+   width: 330px;
+   height: 420px;
+   /* background-color: crimson; */
+   margin: 0 auto;
+}
+
+ .ad-mobileBody{
+     width: 300px;
+     height: 250px;
+     /* background-color: cyan; */
+     margin: 5px auto;
+ }
+
+ .ad-mobileSmallHeight{
+    width: 320px;
+    height: 50px;
+    /* background-color: rgba(0, 255, 255, 0.767); */
+    margin: 5px auto;
+ }
+
+ .ad-mobileLargeHeight{
+    width: 320px;
+    height: 100px;
+    /* background-color: rgba(0, 255, 255, 0.479); */
+    margin: 0 auto;
+ }
+
+/*/-/-/-/-/--//-/-/-/-/-/-/----MAIN ADS  END-----/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-*/
+
+
+      
+     }
+
+
+     /* -----------------------------------------------------------------------*/
+
+    /* Small devices (portrait tablets and large phones, 600px and up) */
+    @media only screen and (min-width: 449px) and (max-width: 768px ) {
+
+      #logoNavBar{
+      
+       }
+
+      #logo{
+        left: 20px;
+      }
+
+      #lognav-below-space{
+        height: 15px;
+ 
+       }
+
+      .pageContent{
+        width: 100%;
+        height: auto;
+        margin: 20px auto;
+        font-family:'Open Sans', sans-serif;
+        border-left: 0px rgb(204, 204, 204) solid;
+        border-right: 0px rgb(204, 204, 204) solid;
+        padding: 10px;
+
+      }
+          #DUbutton{
+            width: 80%;
+          }
+
+
+    
+/*/-/-/-/-/--//-/-/-/-/-/-/----MAIN ADS-----/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-*/
+
+
+            /*   ad-largeSkyscraper   300 x 600 */
+            #ad-largeSkyscraper1{
+              display: none;
+            } 
+
+            #ad-largeSkyscraper2{
+                display: none;
+              } 
+            
+             #ad-largeSkyscraper3{
+               display: none;
+            }
+            
+            #ad-largeSkyscraper4{
+                display: none;
+              } 
+
+              #ad-largeSkyscraper5{
+                display: none;
+              } 
+      
+      
+            /*   ad-leaderboard   728 x 90 */
+            #ad-leaderboard1{
+              display: none;
+ 
+            }
+      
+        
+            /*   ad-medRectangle1   300 x 250 */
+             #ad-medRectangle1{
+              display: none;
+
+      
+            } 
+      
+            /*   ad-medRectangle2   300 x 250 */
+            #ad-medRectangle2{
+               display: none;
+
+      
+            } 
+      
+      
+           /*   ad-halfPage1   160 x 600 */
+            #ad-halfPage1{
+              display: none;
+
+            }
+            
+           /*   ad-halfPage2   160 x 600 */
+           #ad-halfPage2{
+            display: none;
+
+          }
+
+          #ad-halfPage3{
+            display: none;
+      
+          }
+    
+          #ad-halfPage4{
+            display: none;
+      
+          }
+    
+          #ad-halfPage5{
+            display: none;
+      
+          }
+
+          .ad-last{
+            display: none;
+      
+          }
+
+          .ad-ParentBody{
+            display: none;
+        }
+
+        .ad-ParentBodySmall{
+            display: none;
+        }
+
+        .ad-mobile-ParentBody{
+            width: 330px;
+            height: 420px;
+            /* background-color: crimson; */
+            margin: 0 auto;
+         }
+     
+          .ad-mobileBody{
+              width: 300px;
+              height: 250px;
+              /* background-color: cyan; */
+              margin: 5px auto;
+          }
+     
+          .ad-mobileSmallHeight{
+             width: 320px;
+             height: 50px;
+             /* background-color: rgba(0, 255, 255, 0.767); */
+             margin: 5px auto;
+          }
+     
+          .ad-mobileLargeHeight{
+             width: 320px;
+             height: 100px;
+             /* background-color: rgba(0, 255, 255, 0.479); */
+             margin: 0 auto;
+          } 
+
+/*/-/-/-/-/--//-/-/-/-/-/-/----MAIN ADS END -----/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-*/
+
+
+    }
+  /* ------------------------------------------------------------- */
