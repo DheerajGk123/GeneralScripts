@@ -56,9 +56,15 @@
       .firstDiv{
         width: 100%;
         height: auto;
-        background-image: linear-gradient(rgb(255, 223, 0),rgb(241, 255, 47));
+
+        /* background-image: linear-gradient(rgb(255, 223, 0),rgb(241, 255, 47));
         background-image: -moz-linear-gradient(rgb(246, 245, 0), rgb(255, 255, 80));
-        background-image: -webkit-linear-gradient(rgb(246, 245, 0), rgb(255, 255, 80));
+        background-image: -webkit-linear-gradient(rgb(246, 245, 0), rgb(255, 255, 80)); */
+
+        background: linear-gradient(rgb(255, 224, 62),rgb(241, 255, 47));
+        background: -moz-linear-gradient(rgb(255, 224, 62), rgb(255, 255, 80));
+        background: -webkit-linear-gradient(rgb(255, 224, 62), rgb(255, 255, 80));
+
         text-align: center;
         padding-top: 80px;
         font-family: 'Roboto',sans-serif;
