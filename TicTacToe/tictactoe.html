@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+       <script async src="https://www.googletagmanager.com/gtag/js?id=UA-172787564-1"></script>
+       <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-172787564-1');
+       </script>
+
+<!-- -----------------------------------------------------------   --------------    -->
+
+
+   <title> TicTacToe C++ Code   - General Scripts</title>
+   <link rel="icon"  href="/GS logo/GS_icon.png"  type="image/x-icon" >
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="Keywords" content="Ubuntu,guide,general,scripts,install,dualboot,alongside,windows,10,issues,errors,no,bootable,devices,insert,boot,disk,reinstalling,uninstall,home,mini,project,page,games,domain,names,andrios,mobile,phone,entertainment,ssl,music">
+    <meta name="Description" content="Installing Ubuntu Complete Guide with solving any Errors and Issues">
+    <meta name="Author" content="General Scripts">
+    
+    <!-- Bootstrap CSS -->
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!--- --------   -------   --> 
+    
+    <link rel="stylesheet" type="text/css" href="/TicTacToe/tictactoe.css">
+
+    <!--     font    open sans by steve matteson     -->
+
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+
+    <!------------------------------------------------------------------>
+    
+    <!--  Google Search Console ----------------------------------------------------->
+    
+    <!------------------------------------------------------------------>
+
+
+  </head>  
+  
+  <body>
+ <!--             top bar        -->
+ <div id="logoNavBar" > 
+  <img id="logo"alt="General Scripts" src="/GS logo/GeneralScripts.png" onclick="homePage()" >     
+</div>
+<!--           --------------- --------------      ---------     -->
+
+<script>
+function homePage(){
+window.open('/' , '_blank')
+}
+</script>
+
+
+  <!--              contents          -->
+
+  <div id="lognav-below-space" ></div>
+
+ <!--  ads  -->
+ <!-- ----------sovrn------------ -->
+ <div id="ad-largeSkyscraper1"><script src="//ap.lijit.com/www/delivery/fpi.js?z=750641&width=300&height=600"></script>  </div>
+
+ <div id="ad-medRectangle1"></div>
+ <div id="ad-halfPage1"></div>
+ <div id="ad-halfPage2"></div>
+ <div id="ad-medRectangle2"></div>
+ <div id="ad-leaderboard1"></div>
+ <div id="ad-largeSkyscraper2"></div>
+ <div id="ad-largeSkyscraper3"></div>
+ <div id="ad-largeSkyscraper4"></div>
+ <div id="ad-halfPage3"></div>
+ <div id="ad-halfPage4"></div>
+ <div id='ad-largeSkyscraper5'></div>
+ <div id="ad-halfPage5"></div>
+
+<!--  --- --- -->
+
+<br>
+ <div class="container pageContent">
+  
+  <div >
+  <h1 class="Title"> Tic Tac Toe Using C++ </h>
+  </div>
+  <br>
+  <br>
+
+
+  <h4 class="head4" id=""> Why refer This Code: </h4>
+  <hr width="80%" >
+  <div id="index">
+  <p>
+    <ol type="1" style="font-size:larger">
+     <li>  &nbsp; Code Length is very small compared to other codes</li>
+     <li>	 &nbsp; Easy to understand as there are no complex syntax/keywords involved</li>
+     <li>  &nbsp; Simple game logic has been adapted</li>
+     <li>	 &nbsp; Great output design and interactive behaviour</li>
+    </ol>
+ </p>
+</div>
+<br>
+<br>
+<br>
+
+
+<!--  Mobile  ads  -->
+<div class="ad-mobile-ParentBody">
+  <div class="ad-mobileBody"></div>
+  <div class="ad-mobileSmallHeight"></div>
+  <div class="ad-mobileLargeHeight"></div>
+</div>
+
+<!--  --- --- -->
+
+  <br>
+  <h4 class="head4" id=""> C++  CODE  </h4>
+  <hr width="80%" >
+  <br>
+
+<div class="points">
+  <ol type="1" style="font-size:larger">
+
+    <textarea rows="178" style="background-color: rgb(10, 10, 10);color: white; border: 2px solid black; border-radius: 5px; width:100%; height: 5000px;">
+      /*
+      ██  ██ ████████ ██  ██████     ████████  █████   ██████     ████████  ██████  ███████
+     ██  ██     ██    ██ ██             ██    ██   ██ ██             ██    ██    ██ ██
+    ██  ██      ██    ██ ██             ██    ███████ ██             ██    ██    ██ █████
+   ██  ██       ██    ██ ██             ██    ██   ██ ██             ██    ██    ██ ██
+  ██  ██        ██    ██  ██████        ██    ██   ██  ██████        ██     ██████  ███████
+  */
+  
+  // Author : D4RK-C0D3R
+  
+  #include <iostream>
+  using namespace std;
+  
+  char board[] = {'1','2','3','4', '5','6','7','8','9'};
+  char s[] = {'1','2','3','4', '5','6','7','8','9'};
+  char player,a,b;
+  int count = 0;
+  
+  // Changing the player
+  TogglePlayer(char c,char d){
+    if(player == c)
+      player = d;
+    else
+      player = c;
+  
+    return 0;
+  }
+  
+  // Drawing tic tac toe
+  void Draw(){
+    cout << endl;
+    cout << "######## ##  ######     ########  #####   ######     ########  ######  ####### " << endl;
+    cout << "   ##    ## ##             ##    ##   ## ##             ##    ##    ## ##      " << endl;
+    cout << "   ##    ## ##             ##    ####### ##             ##    ##    ## ####### " << endl;
+    cout << "   ##    ## ##             ##    ##   ## ##             ##    ##    ## ##      " << endl;
+    cout << "   ##    ##  ######        ##    ##   ##  ######        ##     ######  ####### " << endl;
+    cout << endl;
+    cout << " | " << board[0] << " | " << board[1] << " | " << board[2] << " | " << endl;
+    cout << " ------------- " << endl;
+    cout << " | " << board[3] << " | " << board[4] << " | " << board[5] << " | " << endl;
+    cout << " ------------- " << endl;
+    cout << " | " << board[6] << " | " << board[7] << " | " << board[8] << " | " << endl;
+    cout << endl;
+  }
+  
+  // get input from player
+  void input(){
+    int a;
+    cout << "Choose the number field " << player << ": ";
+    cin >> a;
+    count += 1;
+    if (a == 1)
+      board[0] = player;
+    else if (a == 2)
+      board[1] = player;
+    else if (a == 3)
+      board[2] = player;
+    else if (a == 4)
+      board[3] = player;
+    else if (a == 5)
+      board[4] = player;
+    else if (a == 6)
+      board[5] = player;
+    else if (a == 7)
+      board[6] = player;
+    else if (a == 8)
+      board[7] = player;
+    else if (a == 9)
+      board[8] = player;
+  }
+  
+  // check if player is win algorithm
+  char check(){
+    if (board[0] == board[1] && board[1] == board[2]){
+      return player;
+    }
+    if (board[3] == board[4] && board[4] == board[5]){
+      return player;
+    }
+    if (board[6] == board[7] && board[7] == board[8]){
+      return player;
+    }
+    if (board[0] == board[3] && board[3] == board[6]){
+      return player;
+    }
+    if (board[1] == board[4] && board[4] == board[7]){
+      return player;
+    }
+    if (board[2] == board[5] && board[5] == board[8]){
+      return player;
+    }
+    if (board[0] == board[4] && board[4] == board [8]){
+      return player;
+    }
+    if (board[2] == board[4] && board[4] == board [6]){
+      return player;
+    }
+    if(count == 9)
+      return 'd';
+  
+  return '/';
+  }
+  
+  // clear the screen
+  void clear(){
+    system("cls");
+  }
+  
+  // output winner
+  int winner(char c){
+    if(c == a ){
+      cout << c << " Wins!! ()==|:::::::::::> Game Over" << endl;
+      return 1;
+    }
+    if(c == b){
+      cout << c << " Wins!! ()==|:::::::::::> Game Over" << endl;
+      return 1;
+    }
+    if(c == 'd'){
+      cout << "Draw!! ()==|:::::::::::> Game Over" << endl;
+    return 1;
+    }
+  
+  return 0;
+  }
+  
+  // to play playagain
+  int playagain(){
+    char choice;
+    cout << endl;
+    cout << "Do you want to play again:\n";
+    cout << "Y) Yes" << "\n" << "N) No" << endl;
+    cout << "Choose: ";
+    cin >> choice;
+    if(choice == 'Y' || choice == 'y' || choice == '1')
+      return 1;
+    if(choice == 'N' || choice == 'n' || choice == '2')
+      return 2;
+  return 0;
+  }
+  
+  // Main function
+  int main(){
+    int d = 1;
+    int x = 0;
+    clear();
+    Draw();
+    cout << "Enter Player one's character: ";
+    cin >> a;
+    cout << "Enter Player two's character: ";
+    cin >> b;
+      while(x != 1){
+        clear();
+        Draw();
+        TogglePlayer(a,b);
+        input();
+        char test = check();
+        clear();
+        Draw();
+        x = winner(test);
+    }
+    if(x == 1){
+      d = playagain();
+      if(d == 1){
+        x = 0;
+        count = 0;
+        d = 0;
+        for(int i=0;i<10;i++)
+        board[i] = s[i];
+        main();
+      }
+      else if( d == 2)
+        exit(0);
+    }
+  }
+</textarea>
+</div>
+
+  <br><br><br><br><br>
+ 
+
+<!--  Mobile  ads  -->
+<div class="ad-mobile-ParentBody">
+  <div class="ad-mobileBody"></div>
+  <div class="ad-mobileSmallHeight"></div>
+  <div class="ad-mobileLargeHeight"></div>
+</div>
+
+<!--  --- --- -->
+
+<!--  inside body ads  -->
+<div class="ad-ParentBody">
+  <div class="ad-Body">
+     <div class="ad-LargeRect1"></div>
+     <div class="ad-LargeRect1"></div>
+  </div>
+  <div class="ad-leaderBoard2"></div>
+  </div>
+  
+  <br><hr width="80%" > <br>
+
+<!--  --- --- -->
+
+
+<br>
+
+<h4 class="head4" id="">Output </h4>
+<hr width="80%" >
+<br>
+
+<div class="points" style="height: 1250px; text-align: center;">
+  <p><img alt="output" src="/TicTacToe/1.png" width="50%" ></p>
+<br>  <hr>
+
+  <p><img alt="output" src="/TicTacToe/2.png" width="50%" ></p>
+<br>  <hr>
+
+  <p><img  alt="output" src="/TicTacToe/3.png" width="50%" ></p>
+<br>  <hr>
+
+  <p><img  alt="output" src="/TicTacToe/4.png" width="50%" ></p>
+<br>  <hr>
+
+  <p><img alt="output" src="/TicTacToe/5.png" width="50%" ></p>
+
+</div>
+ <br>
+ <hr width="80%" > <br>
+
+ <!-- ----------next link -------------- -->
+
+ <div style="text-align: center;">
+  <p style="font-weight: bold;"> Next</p>
+ <p><a href="/opengl/"> <button id="NextLink">Configure OpenGL</button></a> </p>
+</div>
+<br>
+</div>
+
+
+<!--  Mobile  ads  -->
+<div class="ad-mobile-ParentBody">
+  <div class="ad-mobileBody"></div>
+  <div class="ad-mobileSmallHeight"></div>
+  <div class="ad-mobileLargeHeight"></div>
+</div>
+
+<!--  --- --- -->
+
+
+<!--  last  ads  -->
+<div class="ad-last">
+  <div class="ad-leaderBoard4"></div>
+  <div class="ad-subLast1">
+     <div class="ad-LargeRect4"></div>
+     <div class="ad-MediumRect4"></div>
+  </div>
+  </div>
+  
+  <br><br>
+<!--  --- --- --> 
+
+</div>
+
+  <!--        ------------------------------                -->
+
+
+
+  <!--                footer              --> 
+  <footer>
+    <div class="container-fluid finalCont">
+      <div class="row bootRow1" align="center">
+        <div class="col-lg-4 bootCol"  >
+             <!-- <ul type="none">
+              <li><a href="" target="_blank">Terms of Use</a></li><br>
+              <li><a href="" target="_blank">Home</a></li><br>
+              <li><a href="" target="_blank">          </a></li><br>
+            </ul> -->
+  
+            <p><a href="/Terms" target="_blank">Terms of Use</a></p><br>
+            <p><a href="/" target="_blank">Home</a></p><br>
+            <!-- <p><a href="" target="_blank">          </a></p><br> -->
+  
+         </div> 
+   
+         <div class="col-lg-4 bootCol" >
+           <p><a href="/PrivacyPolicy" target="_blank">Privacy Policy</a></p><br>
+           <p>Copyright &copy 2020. All Rights Reserved</p><br>
+           <!-- <p><a href="" target="_blank">         </a></p><br>  -->
+        </div>
+   
+         <div class="col-lg-4 bootCol" >
+           <p><a href="/Disclaimer" target="_blank">Disclaimer</a></p><br>
+           <p>generalscriptsgs@gmail.com</p><br>
+           <!-- <p><a href="" target="_blank">          </a></p><br> -->
+        </div>
+   
+      </div>
+   
+      <div class="row bootRow2">
+        <div class="col-lg-12 bootCol2">
+         <img alt="General Scripts" src="/GS logo/GeneralScripts.png" width="200px" style="filter: invert(100%);" > 
+       </div>
+      </div>
+   </div>
+   </footer>     
+  <!--           --------------- --------------      ---------     -->
+
+    
+    
+    <!-- Optional JavaScript -->
+    <!-- jQuery ( 3.2.1 ) first, then Popper.js ( 1.12.9 ), then Bootstrap JS ( 4.0.0 ) -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <!-- ----------sovrn------------- -->
+    <script type="text/javascript">
+      var vglnk = {key: '1e89815feab24e09dfaa875620f53bcd'};
+      (function(d, t) {
+          var s = d.createElement(t);
+              s.type = 'text/javascript';
+              s.async = true;
+              s.src = '//cdn.viglink.com/api/vglnk.js';
+          var r = d.getElementsByTagName(t)[0];
+              r.parentNode.insertBefore(s, r);
+      }(document, 'script'));
+  </script>
+
+  </body>
+
+
+</html>  

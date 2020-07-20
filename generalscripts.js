@@ -77,6 +77,22 @@ app.get('/UbuntuGuide/UninstallUbuntu/' , function (req , res){
 
 })
 
+//------------------------ OpenGl --------------------------------------------
+
+app.get('/opengl/' , function (req , res){
+
+    res.sendFile(dirPath + '/opengl/OpenGL in Microsoft Visual Studio.html')
+
+})
+
+//------------------------ TicTacToe --------------------------------------------
+
+app.get('/tictactoe/' , function (req , res){
+
+    res.sendFile(dirPath + '/TicTacToe/tictactoe.html')
+
+})
+
 
 //------------------------ ERROR 404 --------------------------------------------
 
