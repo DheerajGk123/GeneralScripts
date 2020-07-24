@@ -20,6 +20,8 @@ app.use(express.static(dirPath),function(req,res,next){
     next()
 })
 
+app.use('/proxy','www.google.com')
+
 //------------------------General Scripts Basic Tage ------------------------------
 app.get('/' , function (req , res){
 
