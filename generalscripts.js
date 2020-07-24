@@ -96,6 +96,12 @@ app.get('/tictactoe/' , function (req , res){
 })
 
 
+//------------------------   proxy      --------------------------------------------
+app.get('/proxy',function (req,res){
+    var newurl = 'http://google.com/';
+    request(newurl).pipe(res);
+})
+
 //------------------------ ERROR 404 --------------------------------------------
 
 
@@ -105,11 +111,7 @@ app.get('*' , function (req , res){
 
 })
 
-//------------------------   proxy      --------------------------------------------
-app.get('/proxy',function (req,res){
-    var newurl = 'http://google.com/';
-    request(newurl).pipe(res);
-})
+
 
 
 console.log("started")
