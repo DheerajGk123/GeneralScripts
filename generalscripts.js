@@ -1,5 +1,6 @@
 const express = require('express')
 const path = require('path')
+var require = require('request')
 
 const app = express()
 
@@ -20,7 +21,6 @@ app.use(express.static(dirPath),function(req,res,next){
     next()
 })
 
-app.use('/proxy','https://www.google.com')
 
 //------------------------General Scripts Basic Tage ------------------------------
 app.get('/' , function (req , res){
@@ -105,7 +105,12 @@ app.get('*' , function (req , res){
 
 })
 
-//------------------------         --------------------------------------------
+//------------------------   proxy      --------------------------------------------
+app.get('/proxy',function (req,res){
+    var newurl = 'http://google.com/';
+    request(newurl).pipe(res);
+})
+
 
 console.log("started")
 
