@@ -1,0 +1,120 @@
+/*  ---- Scroll bar  --- */
+/* width */
+::-webkit-scrollbar {
+    width: 0px;
+        } 
+/* ----------------------- */
+
+body{
+   /* font-family: 'Montserrat Alternates', sans-serif;
+   font-family: 'Montserrat', sans-serif; */
+   background:linear-gradient(90deg, white 15%, rgb(238,238,238) 50%,white 85%);
+}
+
+#banner{
+    width: 100%;
+    height: 500px;
+    position: relative;
+    /* background-color: aqua; */
+    background-color: rgb(226, 43, 65);
+    overflow: hidden;
+   /* border: 5px solid red;*/
+
+}
+
+#banner1{
+    width: 85%;
+    height: 100%;
+    /* background-color: blueviolet; */
+    background-color: rgb(221, 221, 221);
+    transform: skewX(30deg);
+    position: absolute;
+    left: -10%;
+    z-index: 0;
+    box-shadow: 3px -10px 30px 5px rgb(82, 82, 82);
+    -webkit-box-shadow: 3px -10px 30px 5px rgb(82, 82, 82);
+    -moz-box-shadow: 3px -10px 30px 5px rgb(82, 82, 82);
+   /* border: 5px solid black;*/
+
+}
+
+#myimg{
+    width: 35%;
+    height: 100%;
+    position: absolute;
+    bottom: 0px;
+    right: 5%;
+    z-index: 1;
+    /*border: 5px solid black;*/
+}
+
+#Name{
+    z-index: 1;
+    position: absolute;
+    bottom: 18%;
+    left: 3%;
+    /* border: 2px solid rgb(7, 255, 7); */
+    font-size: 100px;
+    font-weight: 400;
+    color: rgb(23, 23, 23);
+    cursor: default;
+}
+
+#Name span{
+    color: rgb(226, 28, 51);
+}
+
+#Caption{
+    z-index: 1;
+    position: absolute;
+    bottom: 5%;
+    left: -1%;
+    /* border: 2px solid rgb(255, 7, 7); */
+    border-bottom-right-radius: 50px;
+    border-top-right-radius: 50px;
+    font-size: 100px;
+    color: rgb(255, 255, 255);
+    background-color:  rgb(0, 0, 175);
+    padding-left: 4.6%;
+    padding-right: 1%;
+    box-shadow: 2px 5px 10px 1px rgb(82, 82, 82);
+    -webkit-box-shadow: 2px 5px 10px 1px rgb(82, 82, 82);
+    -moz-box-shadow: 5px 5px 10px 1px rgb(82, 82, 82);
+    cursor: default;
+}
+
+.container-fluid{
+    /* border: 3px solid blue; */
+    /* background-color: #ffffff; */
+    padding: 0px;
+    margin: 0px 0px;
+}
+
+.HLine{
+    width: 100%;
+    height: 5px;
+    background: radial-gradient(ellipse,rgba(110, 110, 110,1) ,rgba(120, 120, 120, 0.5) 20%,rgba(255, 255, 255, 0.2) 60%);
+    background: -webkit-radial-gradient(ellipse,rgba(110, 110, 110,1) ,rgba(120, 120, 120, 0.5) 20%,rgba(255, 255, 255, 0.2) 60%);
+    background: -moz-radial-gradient(ellipse,rgba(110, 110, 110,1) ,rgba(120, 120, 120, 0.5) 20%,rgba(255, 255, 255, 0.2) 60%);
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+
+
+/*----  MEDIA QUERIES  --------------------------------------------------------------------*/
+
+/*  FOr Phones  */
+@media only screen and (max-width: 450px) {
+
+}
+
+
+
+
+/*------------------------------------------------------------------------------------------*/
+
+/* Small devices (portrait tablets and large phones, 600px and up) -------------------------*/
+ @media only screen and (min-width: 449px) and (max-width: 908px ) {
+   
+} 

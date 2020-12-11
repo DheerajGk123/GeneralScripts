@@ -1,0 +1,106 @@
+.certis{
+    /* border: 1px solid rgb(228, 13, 13); */
+    margin: 80px 40px;
+    text-align: center;
+}
+
+.certis h1{
+    font-weight: lighter;
+    cursor: default;
+}
+
+.certiR{
+    width: 100%;
+    /* border: 2px solid green;  */
+    margin: 0px 0px;
+}
+
+.certiC{
+    width: 46%;
+    /* border: 4px solid rgba(0, 51, 128, 0);  */
+    margin: 5% 2%;
+    border-radius: 10px;
+    padding: 0px 0px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.certiC:hover{
+    box-shadow: 0px 0px 20px -5px rgb(82, 82, 82);
+    /* -webkit-box-shadow: 3px -10px 30px 5px rgb(82, 82, 82);
+    -moz-box-shadow: 3px -10px 30px 5px rgb(82, 82, 82); */
+}
+
+.imgD{
+    width: 100%;
+    height: 100%;
+}
+
+.imgDisp{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    /* border: 5px solid mediumorchid; */
+    z-index: 9;
+    display: none;
+    align-items: center;
+}
+
+.cancelX{
+    position: fixed;
+    right: 5%;
+    top: 1%;
+    font-size: xx-large;
+    color: white;
+    font-family: 'Montserrat Alternates', sans-serif;   
+    cursor: pointer;
+}
+
+#imgDD{
+    /* border: 5px solid brown; */
+    width: 70%;
+    height: 90%;
+    margin: 0 auto;
+}
+
+
+
+
+/*----  MEDIA QUERIES  --------------------------------------------------------------------*/
+
+/*  FOr Phones  */
+@media only screen and (max-width: 450px) {
+
+.certis{
+      margin: 30px 10px;
+    }
+
+.certiC{
+    width: 100%;
+    /* border: 2px solid rgb(0, 51, 128);  */
+    margin: 10px 0px;
+}
+
+#imgDD{
+    width: 90%;
+}
+
+}    
+    
+    /*------------------------------------------------------------------------------------------*/
+        
+    
+    /* Small devices (portrait tablets and large phones, 600px and up) -------------------------*/
+    @media only screen and (min-width: 449px) and (max-width: 908px ) {
+        
+.certis{
+    margin: 30px 20px;
+  }
+
+
+  #imgDD{
+    width: 90%;
+}
+    }

@@ -1,0 +1,100 @@
+.contact{
+    position: fixed;
+    bottom: 0%;
+    left: 30%;
+    z-index: 3;
+    /* border: 3px solid purple; */
+    width: 40%;
+    height: auto;
+    margin: 0px auto;
+    padding: 0px 0px;
+    filter: drop-shadow(0px 10px 20px rgb(0, 0, 0));
+}
+
+.trapezium{
+    width: 100%;
+    position: relative;
+    top: 0px;
+    border-bottom: 20px solid rgb(41, 16, 65);
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    /* filter: drop-shadow(0px 10px 20px rgb(0, 0, 0)); */
+    cursor: pointer;
+    z-index: 0;
+}
+
+.tri{
+    border-bottom: 10px solid rgb(253, 253, 253);
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    position: absolute;
+    top: 5px;
+    z-index: 3;
+    margin: auto 48%;
+    cursor: pointer;
+}
+
+.disRnot{
+    background: linear-gradient(135deg,#240b36,#c31432);
+    border-radius: 2px;
+}
+
+.infor{
+    width: 100%;
+    /* border: 3px solid rgb(32, 255, 3); */
+    margin: 0px auto;
+    padding: 5px 0px;
+    color: rgb(255, 255, 255);
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+.icon{
+    /* border:  2px solid rgb(243, 9, 28); */
+    /* background-color: teal; */
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+.icon img{
+    margin: 0 auto;
+}
+
+.details{
+    /* border:  2px solid rgb(15, 15, 15); */
+    /* background-color: tomato; */
+    height: 50px;
+    display: flex;
+    align-items: center;
+    cursor: default;
+}
+
+.details p{
+    margin: 0 auto;
+    font-size: small;
+}
+
+
+
+/*----  MEDIA QUERIES  --------------------------------------------------------------------*/
+
+/*  FOr Phones  */
+@media only screen and (max-width: 450px) {
+
+    .contact{
+        width: 80%;
+        left: 10%;
+    }
+}
+
+
+
+
+/*------------------------------------------------------------------------------------------*/
+
+/* Small devices (portrait tablets and large phones, 600px and up) -------------------------*/
+@media only screen and (min-width: 449px) and (max-width: 908px ) {
+    .contact{
+        width: 50%;
+        left: 20%;
+    }
+}

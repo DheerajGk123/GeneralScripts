@@ -1,0 +1,112 @@
+
+.projects{
+    border: 0px solid rgba(228, 13, 13, 0);
+    margin: 80px 80px;
+    text-align: center;
+}
+
+.projects h1{
+    font-weight: lighter;
+    cursor: default;
+}
+
+.projectMain{
+    width: 100%;
+    height: auto;    
+    overflow: hidden;
+    margin :10px auto;
+}
+
+.projectName{
+    /* border: 1px solid black; */
+    font-size: x-large;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    background-color: tomato;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.projectName p{
+    margin: 0px 0px;
+    text-align: left;
+}
+
+.projectArrow{
+    /* border: 2px solid rgb(255, 3, 3); */
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    margin-right: 3px;
+}
+
+.Arrow{
+    width: 20%;
+    height: 20%;
+    border-bottom: 3px solid black;
+    border-right: 3px solid black;
+    margin: 0 auto;
+    transform: rotate(45deg);
+}
+
+.proName{
+    /* border: 2px solid rgb(41, 0, 117); */
+}
+
+.projectDes{
+    height: auto;
+    /* border: 2px solid mediumspringgreen; */
+    margin-left: 0px;
+    padding: 10px 5px;
+    text-align: left;
+    font-family: 'Montserrat Alternates', sans-serif;   
+    display: block;
+    cursor: default;
+}
+
+#p1{
+}
+
+#p2{
+
+}
+
+#p3{
+
+}
+
+
+/*----  MEDIA QUERIES  --------------------------------------------------------------------*/
+
+/*  FOr Phones  */
+@media only screen and (max-width: 450px) {
+
+.projects{
+    margin: 30px 10px;
+}
+
+.projectName{
+    font-size: large;
+}
+
+.projectArrow{
+    margin-right: 0px;
+}
+}    
+
+/*------------------------------------------------------------------------------------------*/
+    
+
+/* Small devices (portrait tablets and large phones, 600px and up) -------------------------*/
+@media only screen and (min-width: 449px) and (max-width: 908px ) {
+    
+.projects{
+    margin: 30px 30px;
+}        
+
+.projectName{
+    font-size: larger;
+}
+}

@@ -48,6 +48,13 @@ app.get('/Disclaimer' , function (req , res){
 
 })
 
+//------------------------Dheeraj G --------------------------------------------
+app.get('/author' , function (req , res){
+
+    res.sendFile(dirPath + '/DheerajG/DheerajG.html')
+
+})
+
 //------------------------Ubuntu Guide --------------------------------------------
 
 app.get('/UbuntuGuide/CreatingBootableUsbDrive/' , function (req , res){

@@ -1,0 +1,44 @@
+.description{
+    /* border: 2px solid rgb(228, 13, 13);*/
+     margin: 60px 100px;
+     margin-bottom: 60px;
+     cursor: default;
+ }
+ 
+ .description p{
+     font-size: 20px;
+     font-family: 'Montserrat Alternates', sans-serif;
+     text-align: center;
+ 
+ }
+
+ /*----  MEDIA QUERIES  --------------------------------------------------------------------*/
+
+/*  FOr Phones  */
+@media only screen and (max-width: 450px) {
+
+    .description{
+        /* border: 2px solid rgb(228, 13, 13); */
+        margin: 30px 10px;
+    }
+    
+    .description p{
+        font-size: 13px;
+    }
+}
+
+
+/*------------------------------------------------------------------------------------------*/
+
+/* Small devices (portrait tablets and large phones, 600px and up) -------------------------*/
+@media only screen and (min-width: 449px) and (max-width: 908px ) {
+
+    .description{
+        /* border: 2px solid rgb(228, 13, 13); */
+        margin: 30px 30px;
+    }
+    
+    .description p{
+        font-size: 15px;
+    }
+}
