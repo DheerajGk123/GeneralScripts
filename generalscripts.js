@@ -1,6 +1,5 @@
 const express = require('express')
 const path = require('path')
-var require = require('request')
 
 const app = express()
 
@@ -11,15 +10,17 @@ console.log(dirPath)
 // const indexPath = dirPath + "/GS Index file/index.html"
 // console.log(indexPath)
 
-app.use(express.static(dirPath),function(req,res,next){
-    console.log("===========================================")
-    console.log("domain name is " + req.hostname)
-    console.log("path ; " +  req.path)
-    console.log("originalurl ; " +  req.originalUrl)
-    console.log("baseurl ; " +  req.baseUrl)
-    console.log("===========================================")
-    next()
-})
+app.use(express.static(dirPath),
+// function(req,res,next){
+    // console.log("===========================================")
+    // console.log("domain name is " + req.hostname)
+    // console.log("path ; " +  req.path)
+    // console.log("originalurl ; " +  req.originalUrl)
+    // console.log("baseurl ; " +  req.baseUrl)
+    // console.log("===========================================")
+    // next()
+// }
+)
 
 
 //------------------------General Scripts Basic Tage ------------------------------
@@ -96,11 +97,7 @@ app.get('/tictactoe/' , function (req , res){
 })
 
 
-//------------------------   proxy      --------------------------------------------
-app.get('/proxy',function (req,res){
-    var newurl = 'http://google.com/';
-    request(newurl).pipe(res);
-})
+
 
 //------------------------ ERROR 404 --------------------------------------------
 
@@ -111,6 +108,7 @@ app.get('*' , function (req , res){
 
 })
 
+//------------------------   \      --------------------------------------------
 
 
 
