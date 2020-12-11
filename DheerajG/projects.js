@@ -4,6 +4,10 @@ var proArrLen = proArr.length;
 var activep=1;
 var activeidp = "#p1";
 $(".projectMain").css("height",arroDh+"px");
+/*-----Code Changes Have to be Made -----*/
+var arroDh = $("#p2").children(".proName").outerHeight();
+$("#p2").css("height",arroDh+"px");
+/*---------------------------------------*/
 $(".projectArrow").css("width",arroDh+"px");
 $(".projectArrow").css("height",arroDh+"px");
 $(".projectDes").css("margin-left",arroDh+"px");
@@ -14,7 +18,7 @@ $("#p1").css("height",x + "px");
 $("#p1").children(".projectName").children(".projectArrow").children(".Arrow").css("transform","rotate(-135deg)");
 
 function expandPro(obj){
-    var arroDh = $(".proName").outerHeight();
+    var arroDh = $(obj).children(".proName").outerHeight();
     if(activep == 1 && activeidp == obj){
         $(obj).css("height",arroDh+"px");
         $(obj).children(".projectName").children(".projectArrow").children(".Arrow").css("transform","rotate(45deg)");
@@ -22,6 +26,7 @@ function expandPro(obj){
     }
     else{
     for(var i=0; i< proArrLen;i++){
+        var arroDh = $(proArr[i]).children(".proName").outerHeight();
         $(proArr[i]).css("height",arroDh+"px");
         $(proArr[i]).children(".projectName").children(".projectArrow").children(".Arrow").css("transform","rotate(45deg)");
     }
